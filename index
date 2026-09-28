@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK BF International–CAA | Youth Information Portal</title>
+  <meta name="description" content="SK BF International–CAA youth information and project transparency portal.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-35% 0px -55% 0px">
+
+<nav class="navbar navbar-expand-xl sticky-top glass-nav">
+  <div class="container py-2">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <div class="brand-logos">
+        <img src="assets/barangay-logo.png" alt="Barangay BF International–CAA logo">
+        <span></span>
+        <img src="assets/sk-logo.png" alt="SK BF International–CAA logo">
+      </div>
+      <div class="brand-text">
+        <strong>SK BF INTERNATIONAL–CAA</strong>
+        <small>Las Piñas City • Youth Information Portal</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#officials">Officials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#budget">Budget</a></li>
+        <li class="nav-item"><a class="nav-link" href="#documents">Documents</a></li>
+        <li class="nav-item"><a class="nav-link" href="#source-posts">Source Posts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#participate">Participate</a></li>
+        <li class="nav-item ms-xl-2">
+          <a class="btn btn-sk rounded-pill px-3" href="#projects"><i class="bi bi-grid-3x3-gap me-1"></i> Explore</a>
+        </li>
+        <li class="nav-item ms-xl-1">
+          <button class="btn btn-outline-dark rounded-pill px-3" id="themeBtn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero-section">
+  <div class="hero-orb orb-one"></div>
+  <div class="hero-orb orb-two"></div>
+  <div class="hero-rays"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="eyebrow"><i class="bi bi-stars"></i> SANGGUNIANG KABATAAN • BF INTERNATIONAL–CAA</span>
+        <h1>Programs that <span>move the youth</span> forward.</h1>
+        <p class="hero-copy">
+          A modern public-facing portal for SK BF International–CAA where residents and young people can
+          discover projects, meet the SK officials, view public information, and participate.
+        </p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a href="#projects" class="btn btn-sk btn-lg rounded-pill px-4"><i class="bi bi-rocket-takeoff me-2"></i>View projects</a>
+          <a href="#officials" class="btn btn-light btn-lg rounded-pill px-4 border"><i class="bi bi-people me-2"></i>Meet SK officials</a>
+        </div>
+        <div class="hero-note mt-4">
+          <i class="bi bi-info-circle"></i>
+          Prototype portal. Project/budget records should be replaced with verified official records before publication.
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="hero-panel">
+          <div class="hero-brand-lockup">
+            <div class="hero-logo">
+              <img src="assets/barangay-logo.png" alt="Barangay BF International–CAA logo">
+            </div>
+            <div class="connector-line"></div>
+            <div class="hero-logo sk">
+              <img src="assets/sk-logo.png" alt="SK BF International logo">
+            </div>
+          </div>
+          <div class="hero-panel-title">BF International–CAA</div>
+          <div class="hero-panel-subtitle">Barangay + SK partnership</div>
+          <div class="row g-2 mt-3" id="heroStats"></div>
+          <a href="#projects" class="hero-panel-link">See what the SK is working on <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="quick-strip">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-4"><a href="#projects"><i class="bi bi-kanban"></i><span><strong>Projects</strong><small>Browse programs and accomplishments</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div>
+      <div class="col-md-4"><a href="#officials"><i class="bi bi-person-badge"></i><span><strong>Officials</strong><small>Know the SK team and their roles</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div>
+      <div class="col-md-4"><a href="#documents"><i class="bi bi-folder2-open"></i><span><strong>Documents</strong><small>Public information and records</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="projects">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">PROGRAMS & ACTIVITIES</span>
+        <h2>Projects you can explore</h2>
+        <p>Click any project to view its details, target, status, and supporting information.</p>
+      </div>
+      <div class="project-count" id="projectCount"></div>
+    </div>
+
+    <div class="filter-bar">
+      <div class="search-wrap"><i class="bi bi-search"></i><input id="projectSearch" class="form-control" placeholder="Search project..." aria-label="Search project"></div>
+      <select id="projectCat" class="form-select" aria-label="Project category"></select>
+      <select id="projectStatus" class="form-select" aria-label="Project status">
+        <option value="">All statuses</option>
+        <option>Ongoing</option>
+        <option>Completed</option>
+        <option>Upcoming</option>
+        <option>Pending</option>
+      </select>
+    </div>
+    <div class="row g-4" id="projectGrid"></div>
+  </div>
+</section>
+
+<section class="section-pad soft-bg">
+  <div class="container">
+    <div class="feature-banner">
+      <div class="feature-copy">
+        <span class="section-kicker">FEATURED FROM THE SUPPLIED POSTER</span>
+        <h2>SK Summer League 2026</h2>
+        <p>The supplied campaign poster highlights the SK Summer League 2026 in BF International, CAA, Las Piñas City. The portal includes it as a featured youth-sports activity.</p>
+        <a href="#projects" class="btn btn-sk rounded-pill px-4"><i class="bi bi-dribbble me-2"></i>Open project details</a>
+      </div>
+      <div class="feature-art">
+        <img src="assets/sk-logo.png" alt="SK BF International logo">
+        <div class="feature-ring"></div>
+        <span>SPORTS<br>•<br>YOUTH</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="officials">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">SK OFFICIALS</span>
+        <h2>Meet the SK team</h2>
+        <p>SK officials are transcribed from the supplied Summer League poster. Barangay officials supplied separately are shown below for the barangay side of the portal.</p>
+      </div>
+    </div>
+    <div class="row g-3" id="officialGrid"></div>
+  </div>
+</section>
+
+<section class="section-pad soft-bg" id="source-posts">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">SUPPLIED POSTS & RECORDS</span>
+        <h2>Source gallery</h2>
+        <p>Uploaded images are preserved here as reference material. Click an image to open the full source.</p>
+      </div>
+    </div>
+    <div class="row g-4" id="sourceMediaGrid"></div>
+  </div>
+</section>
+
+<section class="section-pad soft-bg" id="budget">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">FINANCIAL INFORMATION</span>
+        <h2>Budget snapshot</h2>
+        <p>Prototype figures are retained from the original uploaded system and are clearly marked as sample data.</p>
+      </div>
+      <div class="year-control"><label for="yearFilter">Fiscal year</label><select id="yearFilter" class="form-select"><option>2026</option><option>2025</option></select></div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5 g-3" id="budgetCards"></div>
+    <div class="card clean-card mt-4"><div class="card-body p-4">
+      <h5 class="mb-3">Allocation by program</h5>
+      <div class="table-responsive"><table class="table align-middle mb-0">
+        <thead><tr><th>Program</th><th>Allocated</th><th>Obligated</th><th>Disbursed</th><th>Balance</th><th>Utilization</th></tr></thead>
+        <tbody id="budgetTable"></tbody>
+      </table></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="section-pad" id="documents">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">PUBLIC INFORMATION</span>
+        <h2>Documents & records</h2>
+        <p>Organized by type so visitors can quickly find public information.</p>
+      </div>
+    </div>
+    <div class="filter-bar" id="docChips"></div>
+    <div class="row g-3" id="documentGrid"></div>
+  </div>
+</section>
+
+<section class="section-pad accountability-section" id="participate">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <span class="section-kicker">YOUTH PARTICIPATION</span>
+        <h2>Ask. Participate. Stay informed.</h2>
+        <p class="lead">Use the portal to request information, send feedback, report a concern, or track a submitted reference.</p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <button class="btn btn-sk rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#requestModal"><i class="bi bi-send me-2"></i>Request information</button>
+          <button class="btn btn-outline-light rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="bi bi-flag me-2"></i>Report a concern</button>
+          <button class="btn btn-outline-light rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#feedbackModal"><i class="bi bi-chat-heart me-2"></i>Give feedback</button>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="accountability-card">
+          <div class="icon-bubble"><i class="bi bi-megaphone"></i></div>
+          <h5>Follow official updates</h5>
+          <p class="mb-3">The two Facebook links supplied for this project can be opened directly from the portal.</p>
+          <div class="d-grid gap-2">
+            <a class="btn btn-light rounded-pill" target="_blank" rel="noopener" href="https://www.facebook.com/SKBFINTLCAA2024"><i class="bi bi-facebook me-2"></i>SK BF International CAA FB Page</a>
+            <a class="btn btn-light rounded-pill" target="_blank" rel="noopener" href="Barangay BF International-CAA"><i class="bi bi-facebook me-2"></i>Barangay BF International-CAA FB Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="audit">
+  <div class="container">
+    <div class="section-heading"><div><span class="section-kicker">ACTIVITY HISTORY</span><h2>Portal activity</h2><p>Local demo log for actions performed in this browser.</p></div></div>
+    <div class="card clean-card"><div class="card-body p-0"><div class="table-responsive"><table class="table align-middle mb-0">
+      <thead><tr><th>Date</th><th>Action</th><th>Record</th><th>By</th></tr></thead>
+      <tbody id="auditTable"></tbody>
+    </table></div></div></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container py-4 d-flex flex-wrap justify-content-between gap-3">
+    <div>
+      <div class="footer-brand"><img src="assets/barangay-logo.png" alt=""><img src="assets/sk-logo.png" alt=""></div>
+      <strong>SK BF International–CAA</strong>
+      <small class="d-block text-muted">Youth Information & Transparency Portal • Las Piñas City</small>
+    </div>
+    <div class="text-muted small text-end">
+      Prototype built with HTML • CSS • JavaScript • Bootstrap 5<br>
+      <span>Replace sample records with verified official data before public deployment.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Request modal -->
+<div class="modal fade" id="requestModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow-lg rounded-4">
+  <form id="requestForm">
+    <div class="modal-header border-0"><h5 class="modal-title"><i class="bi bi-file-earmark-text me-2"></i>Request for information</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body pt-0">
+      <label class="form-label">Information needed</label><input required name="request" class="form-control mb-3" placeholder="e.g. SK project accomplishment report">
+      <label class="form-label">Purpose</label><textarea required name="details" class="form-control mb-3" rows="3"></textarea>
+      <label class="form-label">Contact (optional)</label><input name="contact" class="form-control">
+    </div>
+    <div class="modal-footer border-0"><button class="btn btn-sk rounded-pill px-4">Send request</button></div>
+  </form>
+</div></div></div>
+
+<!-- Concern modal -->
+<div class="modal fade" id="reportModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow-lg rounded-4">
+  <form id="reportForm">
+    <div class="modal-header border-0"><h5 class="modal-title"><i class="bi bi-shield-exclamation me-2"></i>Report a concern</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body pt-0">
+      <label class="form-label">Category</label>
+      <select required name="category" class="form-select mb-3"><option value="">Select...</option><option>Project</option><option>Budget</option><option>Procurement</option><option>Document</option><option>Other</option></select>
+      <label class="form-label">What happened?</label><textarea required name="details" class="form-control mb-3" rows="4"></textarea>
+      <label class="form-label">Contact (optional)</label><input name="contact" class="form-control">
+    </div>
+    <div class="modal-footer border-0"><button class="btn btn-dark rounded-pill px-4">Send concern</button></div>
+  </form>
+</div></div></div>
+
+<!-- Feedback modal -->
+<div class="modal fade" id="feedbackModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow-lg rounded-4">
+  <form id="feedbackForm">
+    <div class="modal-header border-0"><h5 class="modal-title"><i class="bi bi-chat-heart me-2"></i>Public feedback</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body pt-0">
+      <label class="form-label">How clear is the information?</label><select required name="rating" class="form-select mb-3"><option value="">Select...</option><option value="5">5 - Very clear</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1 - Not clear</option></select>
+      <label class="form-label">Comments</label><textarea required name="details" class="form-control" rows="4"></textarea>
+    </div>
+    <div class="modal-footer border-0"><button class="btn btn-sk rounded-pill px-4">Send feedback</button></div>
+  </form>
+</div></div></div>
+
+<div class="modal fade" id="projectModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content border-0 shadow-lg rounded-4">
+  <div class="modal-header border-0"><div><span class="section-kicker" id="pmCat"></span><h5 class="modal-title mt-1" id="pmTitle"></h5></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  <div class="modal-body pt-0" id="pmBody"></div>
+</div></div></div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast border-0 shadow" role="alert"><div class="toast-body"><i class="bi bi-check-circle-fill me-2 text-success"></i><span id="toastMessage"></span></div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
