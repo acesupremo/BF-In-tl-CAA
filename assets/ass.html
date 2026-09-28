@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanto Kasik - Premium Filipino comfort food and silog meals.">
+  <title>KANTO KASIK | Taste That Moves You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-logo">KANTO <span>KLASIK</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
+
+  <div class="cart-toast" id="cartToast">
+    <div class="toast-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div><strong>Added to your order!</strong><small>Your meal is waiting in the cart.</small></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Kanto Klasik Home">
+      <div class="brand-mark"></div>
+      <div class="brand-text">KANTO <span>KLASIK</span><small>FILIPINO COMFORT FOOD</small></div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#menu"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="#about"><i class="fa-solid fa-fire"></i> About</a>
+      <a href="#offers"><i class="fa-solid fa-tags"></i> Offers</a>
+      <a href="#contact"><i class="fa-solid fa-location-dot"></i> Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Shopping cart">
+        <i class="fa-solid fa-bag-shopping"></i><b id="cartCount">0</b>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-1"></div><div class="hero-orb orb-2"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> PREMIUM FILIPINO STREETFOOD</div>
+          <h1>TASTE THAT<br><em>MOVES</em> <span>YOU.</span></h1>
+          <p>Bold Filipino comfort food, elevated with premium ingredients and served with the kind of flavor you'll remember tomorrow.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary ripple">ORDER NOW <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#about" class="btn btn-dark ripple">EXPLORE MENU <i class="fa-solid fa-compass"></i></a>
+          </div>
+          <div class="hero-meta">
+            <div><div class="meta-icon"><i class="fa-solid fa-bolt"></i></div><span><strong>20 MIN</strong>FAST DELIVERY</span></div>
+            <div><div class="meta-icon"><i class="fa-solid fa-star"></i></div><span><strong>4.9/5</strong>HAPPY EATERS</span></div>
+            <div><div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div><span><strong>MANILA</strong>MADE LOCAL</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="heroVisual">
+          <div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div>
+          <div class="particles"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="food-shadow"></div>
+          <div class="food-stage">
+            <div class="main-food"><img src="images/tapsilog.jpeg" alt="Premium Tapsilog meal"></div>
+          </div>
+          <div class="float-item chili">🌶️</div>
+          <div class="float-item tomato">🍅</div>
+          <div class="float-item herb">🌿</div>
+          <div class="float-item fries">🍟</div>
+          <div class="float-item cheese">🧀</div>
+          <div class="price-chip"><span>FROM</span><strong>₱99</strong><small>BEST SILOG</small></div>
+          <div class="taste-chip"><i class="fa-solid fa-fire"></i><span>100%<b>FLAVOR</b></span></div>
+        </div>
+      </div>
+      <a href="#menu" class="scroll-cue"><span></span> SCROLL TO TASTE</a>
+    </section>
+
+    <section class="marquee" aria-label="Food highlights">
+      <div class="marquee-track">
+        <span>HOT & FRESH <b>✦</b></span><span>KANTO CLASSICS <b>✦</b></span><span>BIG FLAVOR <b>✦</b></span>
+        <span>MADE WITH LOVE <b>✦</b></span><span>DELIVERED FAST <b>✦</b></span>
+        <span>HOT & FRESH <b>✦</b></span><span>KANTO CLASSICS <b>✦</b></span><span>BIG FLAVOR <b>✦</b></span>
+      </div>
+    </section>
+
+    <section class="featured section-pad" id="menu">
+      <div class="section-head reveal">
+        <div><div class="eyebrow"><span></span> OUR SIGNATURES</div><h2>MEET THE <em>FLAVOR</em><br>FAVORITES.</h2></div>
+        <p>Classic Filipino meals with a modern Kanto Kasik twist. Pick your craving and let the good times begin.</p>
+      </div>
+
+      <div class="categories reveal" id="categories">
+        <button class="category active" data-filter="all"><i class="fa-solid fa-grid-2"></i> All</button>
+        <button class="category" data-filter="burgers"><i class="fa-solid fa-burger"></i> Burgers</button>
+        <button class="category" data-filter="pizza"><i class="fa-solid fa-pizza-slice"></i> Pizza</button>
+        <button class="category" data-filter="pasta"><i class="fa-solid fa-bowl-food"></i> Pasta</button>
+        <button class="category" data-filter="chicken"><i class="fa-solid fa-drumstick-bite"></i> Chicken</button>
+        <button class="category" data-filter="desserts"><i class="fa-solid fa-ice-cream"></i> Desserts</button>
+        <button class="category" data-filter="drinks"><i class="fa-solid fa-martini-glass-citrus"></i> Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="food-card reveal" data-category="chicken" data-name="Crispy Chicken Silog" data-price="129">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button><div class="card-badge">BESTSELLER</div>
+          <div class="card-image"><img src="images/chickensilog.jpeg" alt="Crispy Chicken Silog"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.9 <small>(328)</small></div><h3>Crispy Chicken Silog</h3><p>Golden fried chicken, garlic rice & sunny egg.</p><div class="card-bottom"><strong>₱129</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+
+        <article class="food-card reveal" data-category="pasta" data-name="Savory Tapsilog" data-price="119">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button><div class="card-badge hot">HOT PICK</div>
+          <div class="card-image"><img src="images/tapsilog.jpeg" alt="Savory Tapsilog"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.8 <small>(211)</small></div><h3>Savory Tapsilog</h3><p>Rich tapa, fragrant rice and a perfectly fried egg.</p><div class="card-bottom"><strong>₱119</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+
+        <article class="food-card reveal" data-category="burgers" data-name="Longganisa Supreme" data-price="109">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button>
+          <div class="card-image"><img src="images/longsilog.jpeg" alt="Longganisa Silog"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.7 <small>(186)</small></div><h3>Longganisa Supreme</h3><p>Sweet-savory longganisa with classic silog sides.</p><div class="card-bottom"><strong>₱109</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+
+        <article class="food-card reveal" data-category="pizza" data-name="Porksilog Classic" data-price="129">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button><div class="card-badge">PREMIUM</div>
+          <div class="card-image"><img src="images/porksilog.jpeg" alt="Porksilog Classic"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.9 <small>(257)</small></div><h3>Porksilog Classic</h3><p>Tender pork bites, egg and aromatic garlic rice.</p><div class="card-bottom"><strong>₱129</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+
+        <article class="food-card reveal" data-category="desserts" data-name="Steak Bites Rice Bowl" data-price="149">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button><div class="card-badge hot">CHEF'S PICK</div>
+          <div class="card-image"><img src="images/steakbites.jpeg" alt="Steak Bites Rice Bowl"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.8 <small>(144)</small></div><h3>Steak Bites Bowl</h3><p>Juicy seared beef cubes with silog perfection.</p><div class="card-bottom"><strong>₱149</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+
+        <article class="food-card reveal" data-category="drinks" data-name="Bacon Silog Deluxe" data-price="119">
+          <button class="heart"><i class="fa-regular fa-heart"></i></button>
+          <div class="card-image"><img src="images/baconsilog.jpeg" alt="Bacon Silog Deluxe"><span class="food-glow"></span></div>
+          <div class="card-info"><div class="rating"><i class="fa-solid fa-star"></i> 4.7 <small>(102)</small></div><h3>Bacon Silog Deluxe</h3><p>Smoky bacon, fluffy egg and comforting rice.</p><div class="card-bottom"><strong>₱119</strong><button class="add-cart">ADD <i class="fa-solid fa-plus"></i></button></div></div>
+        </article>
+      </div>
+      <p class="filter-note" id="filterNote"></p>
+    </section>
+
+    <section class="offer section-pad" id="offers">
+      <div class="offer-particles"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="offer-image reveal-left"><div class="offer-ring"></div><img src="images/porksilog.jpeg" alt="Special Porksilog Offer"></div>
+      <div class="offer-content reveal-right">
+        <div class="discount-badge"><strong>50%</strong><span>OFF</span></div>
+        <div class="eyebrow"><span></span> LIMITED TIME ONLY</div>
+        <h2>50% OFF<br><em>TODAY.</em></h2>
+        <p>Tonight's cravings deserve something extra. Grab our limited premium meal deal before the clock runs out.</p>
+        <div class="countdown" id="countdown"><div><b>00</b><small>HRS</small></div><i>:</i><div><b>00</b><small>MIN</small></div><i>:</i><div><b>00</b><small>SEC</small></div></div>
+        <a href="#contact" class="btn btn-primary ripple">CLAIM THIS DEAL <i class="fa-solid fa-bolt"></i></a>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="about-visual reveal-left">
+        <div class="about-card-main"><img src="images/logo.jpg" alt="Kanto Kasik Filipino food"></div>
+        <div class="about-stamp">EST.<br><strong>2011</strong><br>MANILA</div>
+        <div class="mini-review"><div class="avatars"><span>🍜</span><span>🍳</span><span>🥩</span></div><strong>10,000+</strong><small>happy customers</small></div>
+      </div>
+      <div class="about-copy reveal-right">
+        <div class="eyebrow"><span></span> OUR STORY</div>
+        <h2>FROM THE <em>KANTO,</em><br>WITH LOVE.</h2>
+        <p>Kanto Kasik started with one simple belief: everyday Filipino food deserves an unforgettable experience. We take familiar comfort dishes and give them bold flavor, quality ingredients and a little modern attitude.</p>
+        <p>From our sizzling favorites to every perfectly fried egg, every plate is made to feel like home—only louder.</p>
+        <a href="#contact" class="text-link">DISCOVER OUR STORY <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><strong class="counter" data-target="10" data-suffix="K+">0</strong><span>Happy Customers</span></div>
+        <div class="stat reveal"><strong class="counter" data-target="50" data-suffix="+">0</strong><span>Menu Items</span></div>
+        <div class="stat reveal"><strong class="counter" data-target="15" data-suffix="+">0</strong><span>Years Experience</span></div>
+      </div>
+    </section>
+
+    <section class="reviews section-pad">
+      <div class="section-head centered reveal"><div><div class="eyebrow"><span></span> REAL FOOD, REAL LOVE</div><h2>WHAT OUR <em>PEOPLE</em> SAY.</h2></div></div>
+      <div class="review-slider reveal" id="reviewSlider">
+        <div class="review-track" id="reviewTrack">
+          <article class="review-card"><div class="quote">“</div><div class="stars">★★★★★</div><p>The Tapsilog is ridiculously good. The meat is flavorful, the egg is perfect, and the whole plate feels premium without losing that Filipino comfort-food soul.</p><div class="review-user"><div class="avatar">JM</div><div><strong>Jasmine M.</strong><small>Manila Foodie</small></div></div></article>
+          <article class="review-card"><div class="quote">“</div><div class="stars">★★★★★</div><p>Exactly the kind of late-night food I want. Fast, hot, generous portions and seriously addictive. Kanto Kasik is now on my weekly rotation.</p><div class="review-user"><div class="avatar">AR</div><div><strong>Adrian R.</strong><small>Verified Customer</small></div></div></article>
+          <article class="review-card"><div class="quote">“</div><div class="stars">★★★★★</div><p>Premium design, premium food, but still feels approachable. The crispy chicken silog deserves all the hype!</p><div class="review-user"><div class="avatar">LC</div><div><strong>Lara C.</strong><small>Food Explorer</small></div></div></article>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"><button class="active"></button><button></button><button></button></div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-copy reveal-left"><div class="eyebrow"><span></span> ORDER WITH US</div><h2>YOUR NEXT<br><em>CRAVING</em> STARTS HERE.</h2><p>Tell us what you're hungry for. We'll take care of the delicious part.</p>
+        <div class="contact-list"><div><i class="fa-solid fa-location-dot"></i><span><b>Find Us</b>Quezon City, Metro Manila</span></div><div><i class="fa-solid fa-phone"></i><span><b>Call Us</b>+63 912 345 6789</span></div><div><i class="fa-solid fa-clock"></i><span><b>Open Daily</b>10:00 AM – 11:00 PM</span></div></div>
+      </div>
+      <form class="order-form reveal-right" id="orderForm" novalidate>
+        <div class="form-row"><label>Name<input type="text" name="name" placeholder="Your full name" required></label><label>Email<input type="email" name="email" placeholder="you@email.com" required></label></div>
+        <div class="form-row"><label>Phone<input type="tel" name="phone" placeholder="+63 900 000 0000" required></label><label>Choose Food<select name="food" required><option value="">Select a favorite</option><option>Crispy Chicken Silog</option><option>Savory Tapsilog</option><option>Longganisa Supreme</option><option>Porksilog Classic</option><option>Steak Bites Bowl</option><option>Bacon Silog Deluxe</option></select></label></div>
+        <div class="form-row"><label>Quantity<input type="number" name="quantity" min="1" value="1" required></label><label>Address<input type="text" name="address" placeholder="Delivery address" required></label></div>
+        <label>Message<textarea name="message" placeholder="Special requests? Tell us here."></textarea></label>
+        <button class="btn btn-primary ripple submit-btn" type="submit">SUBMIT ORDER <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#home"><div class="brand-mark"><i class="fa-solid fa-bowl-food"></i></div><div class="brand-text">KANTO <span>KASIK</span><small>FILIPINO COMFORT FOOD</small></div></a><p>Premium Filipino comfort food with big flavor and zero boring bites.</p><div class="socials"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></div>
+      <div><h4>EXPLORE</h4><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">Our Story</a><a href="#offers">Offers</a></div>
+      <div><h4>CONTACT</h4><a href="tel:+639123456789">+63 912 345 6789</a><a href="mailto:hello@kantokasik.com">hello@kantokasik.com</a><a href="#contact">Quezon City, Manila</a></div>
+      <div><h4>OPENING HOURS</h4><p>MON – THU<br><b>10 AM – 10 PM</b></p><p>FRI – SUN<br><b>10 AM – 11 PM</b></p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> KANTO KASIK. ALL RIGHTS RESERVED.</span><span>MADE FOR <i class="fa-solid fa-heart"></i> FOOD LOVERS</span></div>
+  </footer>
+
+  <div class="search-panel" id="searchPanel"><div><i class="fa-solid fa-magnifying-glass"></i><input id="searchInput" placeholder="Search for your craving..."><button id="closeSearch"><i class="fa-solid fa-xmark"></i></button></div></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
